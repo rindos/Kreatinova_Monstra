@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'psychofont';
+    src: url('grafika/font/FAFERS.TTF');
+}
+
+.kontak{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 20% 20% 20%;
+    grid-gap: 10px;
+    padding-top: 3%;
+}
+
+.tlacitko{
+    text-align: center;
+    width: 220px;
+    height: 120px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'psychofont';
+}
+
+#img_prihlasit {
+   background-image: url('grafika/tlacitka/prihlasit/prihlasit.png');
+}
+
+#img_prihlasit:hover {
+    background-image: url('grafika/tlacitka/prihlasit/prihlasit_hoverl.png');
+        background-size: 280px 110px;
+    height: 110px;
+    width: 280px;
+}
+#img_registrovat {
+    background-image: url('grafika/tlacitka/registrovat/registrovat.png');
+ }
+ 
+ #img_registrovat:hover {
+    background-image: url('grafika/tlacitka/registrovat/registrovat_hover2.png');
+ }
+
+ #img_archiv {
+    background-image: url('grafika/tlacitka/archiv/archiv.png');
+ }
+ 
+ #img_archiv:hover {
+     background-image: url('grafika/tlacitka/archiv/archiv_hover.png');
+ }
+
+ #img_profil {
+    background-image: url('grafika/tlacitka/profil/profil.png');
+ }
+ 
+ #img_profil:hover {
+     background-image: url('grafika/tlacitka/profil/profil_hover.png');
+ }
+
+ #img_odhlasit {
+    background-image: url('grafika/tlacitka/odhlasit/odhlasit.png');
+ }
+ 
+ #img_odhlasit:hover {
+     background-image: url('grafika/tlacitka/odhlasit/odhlasit_hover.png');
+ }
+
+  #img_nahrat_clanek {
+    background-image: url('grafika/tlacitka/nahrat_clanek/nahrat_clanek.png');
+ }
+ 
+ #img_nahrat_clanek:hover {
+     background-image: url('grafika/tlacitka/nahrat_clanek/nahrat_clanek_hover.png');
+ }
+
+#img_nahrat_clanek {
+    background-image: url('grafika/tlacitka/nahrat_clanek/nahrat_clanek.png');
+ }
+ 
+ #img_nahrat_clanek:hover {
+     background-image: url('grafika/tlacitka/nahrat_clanek/nahrat_clanek_hover.png');
+ }
+
+ #img_odeslat {
+    background-image: url('grafika/tlacitka/odeslat/odeslat.png');
+ }
+ 
+ #img_odeslat:hover {
+     background-image: url('grafika/tlacitka/odeslat/odeslat_hover.png');
+ }
+
+#img_potvrdit {
+    background-image: url('grafika/tlacitka/potvrdit/potvrdit.png');
+ }
+
+ #img_potvrdit:hover {
+     background-image: url('grafika/tlacitka/potvrdit/potvrdit_hover.png');
+ }
+
+ #img_prehled_clanku {
+    background-image: url('grafika/tlacitka/prehled_clanku/prehled_clanku.png');
+ }
+
+ #img_prehled_clanku:hover {
+     background-image: url('grafika/tlacitka/prehled_clanku/prehled_clanku_hover.png');
+ }
+
+  #img_prehled_uzivatelu {
+    background-image: url('grafika/tlacitka/prehled_uzivatelu/prehled_uzivatelu.png');
+ }
+
+ #img_prehled_uzivatelu:hover {
+     background-image: url('grafika/tlacitka/prehled_uzivatelu/prehled_uzivatelu_hover.png');
+ }
+
+ #img_prirazeni_clanku_recenzentum {
+    background-image: url('grafika/tlacitka/prirazeni_clanku_recenzentum/prirazeni_clanku_recenzentum.png');
+ }
+
+ #img_prirazeni_clanku_recenzentum:hover {
+     background-image: url('grafika/tlacitka/prirazeni_clanku_recenzentum/prirazeni_clanku_recenzentum_hover.png');
+ }
+
+ #img_sprava_odvolani {
+    background-image: url('grafika/tlacitka/sprava_odvolani/sprava_odvolani.png');
+ }
+
+ #img_sprava_odvolani:hover {
+     background-image: url('grafika/tlacitka/sprava_odvolani/sprava_odvolani_hover.png');
+ }
+
+ #img_stav_clanku {
+    background-image: url('grafika/tlacitka/stav_clanku/stav_clanku.png');
+ }
+
+ #img_stav_clanku:hover {
+     background-image: url('grafika/tlacitka/stav_clanku/stav_clanku_hover.png');
+ }
+
+  #img_upravit_profil {
+    background-image: url('grafika/tlacitka/upravit_profil/upravit_profil.png');
+ }
+
+ #img_upravit_profil:hover {
+     background-image: url('grafika/tlacitka/upravit_profil/upravit_profil_hover.png');
+ }
+
+  #img_vytvorit_recenzi {
+    background-image: url('grafika/tlacitka/vytvorit_recenzi/vytvorit_recenzi.png');
+ }
+
+ #img_vytvorit_recenzi:hover {
+     background-image: url('grafika/tlacitka/vytvorit_recenzi/vytvorit_recenzi_hover.png');
+ }
+
+  #img_zadost_o_recenzenta {
+    background-image: url('grafika/tlacitka/zadost_o_recenzenta/zadost_o_recenzenta.png');
+ }
+
+ #img_zadost_o_recenzenta:hover {
+     background-image: url('grafika/tlacitka/zadost_o_recenzenta/zadost_o_recenzenta_hover.png');
+ }
+
+  #img_zrusit {
+    background-image: url('grafika/tlacitka/zrusit/zrusit.png');
+ }
+
+ #img_zrusit:hover {
+     background-image: url('grafika/tlacitka/zrusit/zrusit_hover.png');
+ }
+
+.img_tlacitka{
+    background-size: 250px 90px;
+    height: 90px;
+    width: 250px;
+}
+.img_tlacitka:hover{
+    background-size: 250px 90px;
+    height: 90px;
+    width: 250px;
+}
+
+body{
+    background-image: linear-gradient(3deg, #98E05F, #0DE3AC);
+    background-attachment: fixed;
+}
+

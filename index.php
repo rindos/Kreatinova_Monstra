@@ -1,0 +1,34 @@
+<?php
+  session_start();
+  require_once('funkce.php');
+?>
+
+<!DOCTYPE html>
+<html>
+<head lang="cs">
+    <meta charset="UTF-8">
+    <title>Kreatinek</title>
+    <link rel="shortcut icon" href="grafika/loga/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+      <div style="text-align: center;padding-top: 2%">
+      <img src="grafika/loga/logo.png" alt="Phuuuu" width="40%" height="40%" style="padding-left: 9%">
+      </div>
+      <?php
+        if (!isset($_SESSION['email'])) {
+          vypis_tlacitka_neprihlasen();
+        }
+        else {
+          vypis_tlacitka_prihlasen();
+        }
+      ?>
+      <footer>
+        <p>Kreatinek hoho<br>
+        <a href="mailto:kreatinek@gmail.com">kreatinek@gmail.com</a></p>
+        <p style="text-align: center;">!Tento web není oficiální web časopisu Logos Polytechnikos!</p>
+      </footer>
+</body>
+</html>
