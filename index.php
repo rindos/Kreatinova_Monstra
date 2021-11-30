@@ -13,9 +13,11 @@
 </head>
 
 <body>
-
+<div style="font-family: 'psychofont';text-align: center;position: relative; top: 1%">
+        <p style="text-align: center;">!Tento web není oficiální web časopisu Logos Polytechnikos!</p>
+      </div>
       <div style="text-align: center;padding-top: 2%">
-      <img src="grafika/loga/logo.png" alt="Phuuuu" width="40%" height="40%" style="padding-left: 9%">
+      <img src="grafika/loga/logo.png" alt="Phuuuu" width="40%" height="40%" style="padding-left: 9%; padding-bottom: 2%">
       </div>
       <?php
         if (!isset($_SESSION['email'])) {
@@ -25,10 +27,6 @@
           vypis_tlacitka_prihlasen();
         }
       ?>
-      <footer>
-        <p>Kreatinek hoho<br>
-        <a href="mailto:kreatinek@gmail.com">kreatinek@gmail.com</a></p>
-        <p style="text-align: center;">!Tento web není oficiální web časopisu Logos Polytechnikos!</p>
-      </footer>
+      
 </body>
 </html>

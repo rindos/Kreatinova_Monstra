@@ -8,26 +8,18 @@
     justify-content: space-evenly;
     grid-template-columns: 20% 20% 20%;
     grid-gap: 10px;
-    padding-top: 3%;
+    
 }
 
 .tlacitko{
-    text-align: center;
+    
+    text-align: center;   
     width: 220px;
     height: 120px;
     margin: auto;
+
 }
 
-footer {
-    text-align: center;
-    padding: 3px;
-    color: black;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    font-family: 'psychofont';
-}
 
 #img_prihlasit {
    background-image: url('grafika/tlacitka/prihlasit/prihlasit.png');
@@ -175,6 +167,14 @@ footer {
      background-image: url('grafika/tlacitka/zrusit/zrusit_hover.png');
  }
 
+ #img_podrobnosti {
+    background-image: url('grafika/tlacitka/podrobnosti/podrobnosti.png');
+ }
+
+ #img_podrobnosti:hover {
+     background-image: url('grafika/tlacitka/podrobnosti/podrobnosti_hover.png');
+ }
+
 .img_tlacitka{
     background-size: 250px 90px;
     height: 90px;
@@ -189,5 +189,341 @@ footer {
 body{
     background-image: linear-gradient(3deg, #98E05F, #0DE3AC);
     background-attachment: fixed;
+    
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin:0;
+   padding:0;
+   height:100%;
+}
+
+/**PROFIL.PHP**/
+
+.obsah {
+   min-height:100%;
+   height: 100%;
+   position:relative;
+}
+
+.hlavicka {
+   padding:10px;
+  
+}
+
+.telo {
+   padding:10px;
+      /* Height of the footer */
+}
+
+.paticka {
+    text-align: center;
+   position: relative;
+   top: 8%;
+   width:100%;
+   height:90px;   /* Height of the footer */
+   font-family: 'psychofont';
+}
+
+.karta_autor_container {
+    text-align: center;  
+    max-height: 400px;
+ 
+}
+
+.karta_jmeno{ 
+  position: relative;
+  top: -310px;
+  left: 150px;
+    font-size: 30px;
+    font-family: 'psychofont';
+}
+
+.karta_prijmeni{
+    position: relative;
+  top: -290px;
+  left: 160px;
+    font-size: 30px;
+    font-family: 'psychofont';
+}
+
+.karta_email{
+    position: relative;
+  top: -270px;
+  left: 160px;
+    font-size: 20px;
+    font-family: 'psychofont';
+}
+
+.karta_datum_reg{
+    position: relative;
+  top: -240px;
+  left: 172px;
+    font-size: 17px;
+    font-family: 'psychofont';
+}
+
+.karta_vydanych_clanku{
+    position: relative;
+  top: -205px;
+  left: -160px;
+    font-size: 40px;
+    font-family: 'psychofont';
+}
+
+.karta_pocet_recenzi{
+    position: relative;
+  top: -202px;
+  left: 70px;
+    font-size: 40px;
+    font-family: 'psychofont';
+}
+
+.karta_avatar{
+    position: relative;
+    top: -440px;
+    left: -164px;  
+}
+
+.karta_avatar_v2{
+    position: relative;
+    top: -395px;
+    left: -164px;  
+}
+
+
+/**NAHRANI_CLANKU.PHP**/
+
+.btn_odeslat_form{
+  border: none;
+  background-color:
+  transparent;
+  background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.nahrani_clanku_kontos{
+    text-align: center;
+    padding-top: 2%;
+    max-height: 550px;
+
+}
+
+.vybrat_soubor_nazev{
+    position: relative;
+    top: -340px;
+    left: 50px;
+    font-family: 'psychofont';
+    
+}
+
+.nahrani_clanku_nazev{
+    position: relative;
+    top: -406px;
+    left: 40px;
+
+}
+
+.vyber_cisla{
+    position: relative;
+    top: -380px;
+    left: 145px;
+}
+
+input[type="Název"]
+{
+    background: transparent;
+    border: none;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'psychofont';
+}
+
+#cars{
+    font-family: 'psychofont';
+    width: 340px;
+    height: 40px;
+    font-size: 30px;
+    border: 0;
+}
+
+input[type="file"]
+{
+    font-size: 16px;
+    font-family: 'psychofont';
+}
+
+
+
+/**STAV_CLANKU.PHP**/
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: lightgray;
+    margin: 25px 0;
+    font-size: 35px;
+    font-family: 'psychofont';
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+
+/**REGISTRACE_RECENZENTA.PHP**/
+.class_registrace_recenzenta{
+  text-align: center;
+}
+
+
+.class_registrace_recenzenta_jmeno{
+  position: relative; 
+  top: -225px;
+  left: -20px;
+}
+
+.class_registrace_recenzenta_prijmeni{
+position: relative;
+  top: -162px;
+  left: -22px;
+}
+
+.class_registrace_recenzenta_email{
+position: relative;
+  top: -100px;
+  left: -20px;
+}
+
+.input_reg_rec
+{
+  background: none;
+    background-color: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'psychofont';
+}
+
+.input_reg_rec::placeholder
+{
+    color: black;
+}
+
+/**PRIHLASENI.PHP**/
+
+.class_kontak_prihlaseni{
+  text-align: center;
+  max-height: 560px;
+}
+
+.prihlaseni_email{
+  position: relative;
+  top: -300px;
+  left: 40px;
+}
+
+.prihlaseni_heslo{
+  position: relative;
+  top: -240px;
+  left: 40px;
+}
+
+.prihlaseni_input{
+  background: none;
+  height: 50px;
+  width: 450px;
+    background-color: none;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'psychofont';
+}
+
+.prihlaseni_input::placeholder{
+ color: black;
+}
+
+.kontak_prihlaseni{
+  display: grid;
+    justify-content: space-evenly;
+    grid-template-columns:5% 20%;
+    grid-gap: 10px;
+}
+
+/**REGISTRACE.PHP**/
+
+.input_registrace{
+  background: none;
+  height: 40px;
+  width: 400px;
+    background-color: none;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'psychofont';
+}
+
+.nahrani_clanku_kontos{
+  text-align: center;
+}
+
+.registrace_jmeno{
+  position: relative;
+  top:-390px;
+  left: 50px;
+}
+
+.registrace_prijmeni{
+  position: relative;
+  top:-370px;
+  left: 50px;
+}
+
+.registrace_email{
+  position: relative;
+  top:-345px;
+  left: 50px;
+}
+
+.registrace_heslo{
+  position: relative;
+  top:-315px;
+  left: 50px;
+}
+
+.registrace_hesloznovu{
+  position: relative;
+  top:-300px;
+  left: 90px;
+}
+
+.kontak_registrace{
+  display: grid;
+    justify-content: center;
+    grid-template-columns: 15% 20%;
+    grid-gap: 120px;
+}
+
+.input_registrace::placeholder{
+ color: black;
+}

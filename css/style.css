@@ -367,3 +367,10 @@ p.change_link{
 	height: 90px;
 	background: transparent;
 }
+
+/**PROFIL.PHP**/
+
+#jmeno_text{
+	padding-left: 10%;
+}
+
