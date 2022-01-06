@@ -1,102 +1,53 @@
 <?php
-	session_start();
-	require_once('funkce.php');
-	if (isset($_POST['t_prihlasit'])) {
-        prihlaseni($_POST['email'],$_POST['heslo']);
-	}
-    if (isset($_POST['t_registrovat'])) {
-		registrace($_POST['jmeno'],$_POST['prijmeni'],$_POST['email'],$_POST['heslo'],$_POST['heslo2']);
-	}
+  session_start();
+  require_once('funkce.php');
+  if (isset($_POST['t_prihlasit'])) {
+    prihlaseni($_POST['email'],$_POST['heslo']);
+}
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <!DOCTYPE html>
-    <html lang="en" class="no-js">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Reg/Log</title>
-        <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-            <header>			
-            </header>
-            <section>
-            		<div style="padding-top: 5%"> 
-                <div id="container_demo">
-                    <a class="hiddenanchor" id="toregister"></a>
-                    <a class="hiddenanchor" id="tologin"></a>
-                    <div id="wrapper">
-                        <div id="login" class="animate form">
-                            <form  action="prihlaseni.php" method="post" autocomplete="on"> 
-                                <h1>Přihlášení</h1> 
-                                <p> 
-                                    <label for="username" class="uname" data-icon="u" > E-mail </label>
-                                    <input id="username" name="email" required="required" type="text" placeholder="např. pavelnovak@seznam.cz"/>
-                                </p>
-                                <p> 
-                                    <label for="password" class="youpasswd" data-icon="p"> Heslo </label>
-                                    <input id="password" name="heslo" required="required" type="password" placeholder="Heslo" /> 
-                                </p>
-                                
-                                <p class="login button"> 
-                                    <input name="t_prihlasit" type="submit" value="Přihlásit" /> 
-								</p>
-                                <p class="change_link">
-									Ještě nejste registrovaný?
-									<a href="#toregister" class="to_register">Registrovat</a>
-								</p>
-                            </form>
-                        </div>
-                        <div id="register" class="animate form">
-                            <form  action="prihlaseni.php" method="post" autocomplete="on"> 
-                                <h1> Registrace </h1> 
-                                <p> 
-                                    <label data-icon="u">Jméno</label>
-                                    <input required="required" name="jmeno" type="text" placeholder="Pavel" />
-                                </p>
-                                <p> 
-                                    <label data-icon="u">Příjmení</label>
-                                    <input required="required" name="prijmeni" type="text" placeholder="Novák" />
-                                </p>
-                                <p> 
-                                    <label for="emailsignup" class="youmail" data-icon="e" > E-mail</label>
-                                    <input id="emailsignup" name="email" required="required" type="email" placeholder="pavelnovak@seznam.cz"/> 
-                                </p>
-                                <p> 
-                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Heslo </label>
-                                    <input id="heslo1_reg" name="heslo" required="required" type="password" placeholder="Heslo"/>
-                                </p>
-                                <p> 
-                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Potvrďte prosím své heslo </label>
-                                    <input id="heslo2_reg" name="heslo2" required="required" type="password" placeholder="Heslo"/>
-                                </p>
-                                <span id='kontrola_hesel'></span>
-                                <p class="signin button"> 
-									<input type="submit" name="t_registrovat" value="Registrovat"/> 
-								</p>
-                                <p class="change_link">  
-									Už jste registrován?
-									<a href="#tologin" class="to_register"> Přihlásit se </a>
-								</p>
-                            </form>
-                        </div>
-						
-                    </div>
-                </div>  
-            </div>
-            </section>
+<html>
+<head lang="cs">
+    <meta charset="UTF-8">
+    <title>Kreatinek</title>
+    <link rel="shortcut icon" href="grafika/loga/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="obsah">
+<div class="hlavicka">
+    <div style="text-align: left;padding-top: 0%; padding-left: 1%;position: absolute;">
+        <a href="index.php" style="text-decoration: none"><img src="grafika/loga/kreatinek.png" alt="" width="10%" height="10%">
+        <img src="grafika/loga/logo.png" alt="" width="4%" height="4%"></a>
+      </div>
+        <p style="text-align: center;font-size: 20px;font-family: 'psychofont';">!Tento web není oficiální web časopisu Logos Polytechnikos!</p>
+
+      
+  </div>
+
+  <div class="class_kontak_prihlaseni">
+  <form action = "prihlaseni.php" method = "POST" enctype="multipart/form-data"/>  
+          <img src="grafika/formulare/prihlaseni.png" alt="Phuuuu" width="950px" height="550px">
+          <div class="prihlaseni_email"><input type="email" name="email" placeholder="E-mail" class="prihlaseni_input"></div>
+          <div class="prihlaseni_heslo"><input type="password" name="heslo" placeholder="Heslo"class="prihlaseni_input"></div>
         </div>
-    </body>
+        <div class="kontak_prihlaseni">
+          <div class="tlacitko">
+          <button type="submit" id="img_odeslat" name="t_prihlasit" class="img_tlacitka btn_odeslat_form"></button>    
+          </div>     
+      
+    </form>  
+    <div class="tlacitko">
+    <a href="registrace.php"><button type="submit" id="img_registrovat" name="t_registrace" class="img_tlacitka btn_odeslat_form"></button></a>  
+  </div>
+</div>
+  </div>
+</div>
+</div>
+ <div class="footer">
+  <button onclick="history.back()" id="img_zpet" class="img_tlacitka_zpet btn_odeslat_form"></button>
+</div>
+</body>
 </html>
-<script>
-$('#heslo1_reg, #heslo2_reg').on('keyup', function () {
-  if ($('#heslo1_reg').val() == $('#heslo2_reg').val()) {
-    $('#kontrola_hesel').html('Hesla se shodují').css('color', 'green');
-  } else 
-    $('#kontrola_hesel').html('Hesla se neshodují').css('color', 'red');
-});
-</script>

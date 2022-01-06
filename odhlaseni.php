@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" href="wet-mouse-152-193425.png" type="image/png">
+<link rel="shortcut icon" href="grafika/loga/logo.png" type="image/png">
   <link rel="stylesheet" href="stylex.css">
   <title>Odhlášení</title>
 </head>
